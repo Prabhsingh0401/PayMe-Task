@@ -440,4 +440,137 @@
         }
     }
   }
-  
+
+  .cta2{
+    img{
+        width: 90vw;
+        margin-left: 4vw;
+        margin-top: 10vh;
+    }
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+}
+
+.faq-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.faq-left, .faq-right {
+    width: 45%;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.accordion {
+    background-color: #ffffff;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+    background-color: #ddd;
+}
+
+.panel {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    border-radius: 0 0 10px 10px;
+}
+
+.panel p {
+    margin: 0;
+}
+
+.plus-icon {
+    font-size: 24px;
+    color: #007BFF;
+}
+
+.faq-right {
+    text-align: left;
+
+    p{
+        font-weight: 700;
+        width: 80%;
+    }
+}
+
+.newsletter-form{
+    margin-top: 10vh;
+}
+
+.newsletter-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 70%;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #0056b3;
+}
+
+.more-faq {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.more-faq:hover {
+    color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .faq-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-left, .faq-right {
+        width: 100%;
+    }
+
+    .faq-right {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}

@@ -19,14 +19,16 @@ import measurement from './assets/Measurement.png'
 import Apple from './assets/Apple.png'
 import cococola from './assets/Cocacola.png'
 import nike from './assets/Nike.png'
+import Footer from './components/Footer'
+import NavBar from './components/NavBar'
+import cta2 from './assets/CTA Banner 2.png'
 import './App.scss'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+    <NavBar></NavBar>
     <div className='hero-section'>
       <div className='hero-left'>
         <h1>We Take Care of 
@@ -168,6 +170,42 @@ function App() {
       <button>See More</button>
     </div>
 
+    <div className='cta2'>
+      <img src={cta2}></img>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-left">
+            <div class="faq-item">
+                <button class="accordion">How do I sign up for the project? <span class="plus-icon">+</span></button>
+                <div class="panel">
+                    <p>You can sign up by visiting our contact page...</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="accordion">What should I prepare before starting? <span class="plus-icon">+</span></button>
+                <div class="panel">
+                    <p>You should have a business plan and project scope...</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="accordion">Does my company need help for marketing advice? <span class="plus-icon">+</span></button>
+                <div class="panel">
+                    <p>We offer marketing consultation services...</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-right">
+            <h2>How We Can Help You?</h2>
+            <p>Follow our newsletter. We will regularly update our latest projects and availability.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Let's Talk</button>
+            </form>
+            <a href="#" class="more-faq">More FAQ →</a>
+        </div>
+    </div>
+    <Footer></Footer>
     </>
   )
 }
